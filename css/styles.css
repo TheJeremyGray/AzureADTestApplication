@@ -1,0 +1,458 @@
+body {
+    font-family:sans-serif;
+    color:#969696;
+}
+form {
+  padding:30px 0 10px 0;
+}
+form.main {
+  padding:80px;
+}
+.float-left {
+  float:left;
+  padding-bottom:15px;
+}
+.header {
+    height:70px;
+    background-color:rgba(0, 70, 127, 0.9);
+    background-image: url("../img/logo.png");
+    background-repeat:no-repeat;
+    background-position:left;
+    background-size:contain;
+    width:100%;
+}
+.container {
+    margin-top:20px;
+    background-color:rgba(255,255,255,0.7);
+    box-shadow:2px 3px 16px #cecece;
+}
+a {
+    text-decoration:none;
+    color:#007dc3;
+    font-size:18px;
+}
+a:hover {
+    text-decoration:none;
+    color:#3989e3;
+}
+h5 {
+    font-weight:normal;
+    color:#333;
+    display:inline;
+}
+.head {
+    margin:40px 0;
+}
+label {
+    font-weight:600;
+    letter-spacing: .5px;
+    display:inherit;
+}
+input {
+    border-radius:0px;
+    height:50px;
+    width:100%;
+    margin-bottom:17px;
+    letter-spacing: .5px;
+}
+.input-textfield {
+    box-sizing: border-box;
+    padding-left:5px;
+    font-size:12px;
+    padding-left:8px;
+    border:1px solid #b3b3b1;
+}
+input[type='checkbox'] {
+    height:auto;
+    width:13px;
+}
+.alt-links {
+    font-size:14px;
+}
+.border-left {
+    border-left:1px solid #969696;
+    padding-left:10px;
+    margin-left:10px;
+}
+.vertical-line {
+    border-left:1px solid #c2c2c2; 
+    border-right:1px solid #c6c6c6; 
+    height:340px;
+    position:absolute;
+    right:50%;
+    left:50%;
+    top:249px; 
+}
+.btn-default.submit,
+.btn-default.email-action {
+    text-align:center;
+}
+.btn-default {
+    background-color:#007dc3;
+    border-radius:0px;
+    color:#fff;
+    border:none;
+    margin:10px 0px;
+    height:50px;
+    width:100%;
+    text-align:left;
+}
+.btn-default:hover {
+    color:#fff;
+    background-color:#184b86;
+}
+.btn-google,
+.btn-microsoft,
+.btn-global {
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size:contain;
+    right:20px;
+}
+.btn-google {
+    background-color:#e86348;
+    background-image:url("../img/google-plus-2.png");
+    background-size:60px 40px;
+}
+.btn-google:hover {
+  background-color:#ae392a;
+}
+.btn-microsoft {
+    background-color:#04aeda;
+    background-image:url("../img/windows-logo.png");
+    background-size:55px 45px;
+    padding-right:10px;
+}
+.btn-microsoft:hover {
+    background-color:#0385a7;
+}
+.btn-global {
+    background-color:rgba(0, 70, 127, 0.9);
+    background-image:url("../img/global-button-icon.png");
+}
+.btn-global:hover {
+    background-color:rgba(0, 43, 77, 0.9);
+}
+.btn-default.email-action {
+    background-color:#78a025;
+    margin-top:19px;
+}
+.login-form-right {
+    float:right;
+    margin-top:3%;
+}
+
+@media only screen and (max-width: 992px){
+    .login-form {
+        width:100%;
+        margin:auto;
+        float:none;
+        padding:0;
+    }  
+    form.main {
+      padding:30px;
+    }
+    form.button-group {
+      padding-top:0px;
+    }
+    .vertical-line {
+        display:none;
+    }
+    .btn-default{
+        width:100%;
+    }
+    .input-group {
+        width:100%;
+    } 
+}
+
+@media only screen and (max-width:768px) {
+  .btn-default.email-action {
+      margin-top:0px; 
+    }
+}
+
+
+
+/*SVG*/
+#anim-background{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+
+.city{
+    background-size:auto 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image:url(../img/login-buildings.svg);
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:400px;
+    border-bottom:15px solid #bbbdbf;
+    z-index: 30;
+}
+
+@keyframes TRUCK {
+    0% {left: 110%;}
+    60% {left: -200px;}
+    100% {left: -200px;}
+}
+
+.truck{
+    width:170px;
+    height:100px;
+    background-image:url(../img/truck.svg);
+    background-position: center bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:15px;
+    left:110%;
+    z-index: 1;
+    animation-name: TRUCK;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes CAR {
+    0% {left: -200px;}
+    60% {left: 110%;}
+    100% {left: 110%;}
+}
+
+.car{
+    width:170px;
+    height:100px;
+    background-image:url(../img/car.svg);
+    background-position: center bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:15px;
+    left:-200px;
+    z-index: 1;
+    animation-name: CAR;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes C1 {
+    0% {left: 30%;}
+    50% {left: 25%;}
+    100% {left: 30%;}
+}
+
+.cloud1{
+    width: 120px;
+    height: 50px;
+    background-image:url(../img/cloud.svg);
+    background-position: center bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:400px;
+    left:30%;
+    z-index: 1;
+    animation-name: C1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes C2 {
+    0% {left: 60%;}
+    50% {left: 65%;}
+    100% {left: 60%;}
+}
+
+.cloud2{
+    width: 170px;
+    height: 55px;
+    background-image:url(../img/doublecloud.svg);
+    background-position: center bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:600px;
+    left:60%;
+    z-index: 1;
+    animation-name: C2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes C3 {
+    0% {left: -300px}
+    100% {left: 110%;}
+}
+
+.cloud3{
+    width: 170px;
+    height: 60px;
+    background-image:url(../img/cloud.svg);
+    background-position: center bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:250px;
+    left:-300px;
+    z-index: 1;
+    animation-name: C3;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes C4 {
+    0% {left: 110%}
+    100% {left: -300px;}
+}
+
+.cloud4{
+    width: 180px;
+    height: 65px;
+    background-image:url(../img/cloud.svg);
+    background-position: center bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:500px;
+    left:-300px;
+    z-index: 1;
+    animation-name: C4;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@media screen and (max-width:768px){
+
+    .city {
+        height: 150px;
+        background-position: center bottom;
+    }
+
+    .truck{
+        width: 65px;
+        height: 40px;
+    }
+
+    .car {
+        width: 60px;
+        height: 25px;
+    }
+}
+
+
+
+
+
+
+
+/* FORGOT CSS */
+
+.desert{
+    background-size:auto 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image:url(../img/desert.svg);
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:200px;
+    border-bottom:15px solid #bbbdbf;
+    z-index: 30;
+}
+
+@keyframes TUMBLEWEED {
+    0% {left: 110%;}
+    60% {left: -200px;}
+    100% {left: -200px;}
+}
+
+.tumbleweed{
+    width:80px;
+    height:80px;
+    left:110%;
+    bottom:15px;
+    position: absolute;
+    animation-name: TUMBLEWEED;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes BOUNCE {
+    0% {bottom: 0px;animation-timing-function: cubic-bezier(0, 0.9, 1, 1);}
+    50% {bottom: 45px;animation-timing-function: cubic-bezier(1, -0.01, 1, 1);}
+    100% {bottom: 0px;animation-timing-function: cubic-bezier(1, -0.13, 1, 1);}
+}
+
+.tumbleweed .bounce{
+    width:80px;
+    height:80px;
+    position: absolute;
+    bottom:45px;
+    left:0;
+    animation-name: BOUNCE;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes SPIN {
+    0% {transform:rotate(360deg); }
+    50% {transform:rotate(180deg) }
+    100% {transform:rotate(1deg) }
+}
+
+.tumbleweed .spin{
+    width:80px;
+    height:80px;
+    background-image:url(../img/tumbleweed.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center center;
+    position: absolute;
+    bottom:0;
+    left:0;
+    animation-name: SPIN;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@media screen and (max-width:768px){
+
+    .desert {
+        height: 100px;
+    }
+
+    .tumbleweed {
+        width: 45px;
+        height: 45px;
+    }
+
+    .bounce {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tumbleweed .spin {
+        width: 45px;
+        height: 45px;
+    }
+
+}
